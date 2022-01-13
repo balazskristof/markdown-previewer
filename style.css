@@ -16,7 +16,7 @@ body {
     border: 1px solid #ddd;
 }
 #preview {
-    overflow: scroll;
+    overflow-y: scroll;
 }
 #overlay {
     position: absolute;
