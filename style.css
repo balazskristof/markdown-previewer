@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin: 0;
@@ -10,21 +13,29 @@ body {
 }
 #editor, #preview {
     flex: 1 0 50vw;
-    border: 1px solid grey;
+    border: 1px solid #ddd;
 }
 #preview {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    font-size: 16px;
-    line-height: 1.5;
-    word-wrap: break-word;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 #overlay {
     position: absolute;
-    top: 16px;
-    right: 32px;
+    padding: 4px;
+    top: 0px;
+    left: 50vw;
+    border-bottom-right-radius: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
 }
-#overlay button {
-    padding: 8px;
+#overlay a {
+    padding: 4px;
     line-height: 0;
+    display: inline-block;
+    color: #ddd;
+}
+#overlay a:hover {
+    color: #888;
+}
+.markdown-body {
+    padding: 45px;
 }
