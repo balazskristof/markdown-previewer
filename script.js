@@ -1,7 +1,9 @@
 let preview = document.querySelector('#preview');
 
 // Ace options
+ace.config.set('basePath', 'path')
 let editor = ace.edit('editor');
+editor.getSession().setMode('ace/mode/markdown');
 editor.on('change', e => {
     document.querySelector('#preview').innerHTML = marked.parse(editor.getValue());
     localStorage.setItem('markdown', editor.getValue());
