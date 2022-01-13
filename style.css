@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 #editor, #preview {
-    flex: 1 1 auto;
+    flex: 1 0 50vw;
     border: 1px solid grey;
 }
 #preview {
